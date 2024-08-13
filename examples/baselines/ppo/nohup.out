@@ -1,0 +1,861 @@
+2024-07-07 01:14:40.471191: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-07-07 01:14:40.489718: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-07-07 01:14:40.489766: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-07-07 01:14:40.501688: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-07 01:14:41.082905: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/tyro/_fields.py:330: UserWarning: The field wandb_entity is annotated with type <class 'str'>, but the default value None has type <class 'NoneType'>. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/tyro/_fields.py:330: UserWarning: The field checkpoint is annotated with type <class 'str'>, but the default value None has type <class 'NoneType'>. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(
+[33;1m2024-07-07 01:14:43,155 - mani_skill  - WARNING - panda_wriststereocam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-07-07 01:14:45,676 - mani_skill  - WARNING - panda_wriststereocam is not in the task's list of supported robots. Code may not run as intended[0m
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.max_episode_steps to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.max_episode_steps` for environment variables or `env.get_wrapper_attr('max_episode_steps')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+2024-08-11 14:49:22.739984: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:22.758202: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:22.758241: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:22.769775: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:23.341504: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/tyro/_fields.py:330: UserWarning: The field wandb_entity is annotated with type <class 'str'>, but the default value None has type <class 'NoneType'>. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/tyro/_fields.py:330: UserWarning: The field checkpoint is annotated with type <class 'str'>, but the default value None has type <class 'NoneType'>. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(
+[33;1m2024-08-11 14:49:26,753 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+Running training
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+2024-08-11 14:49:30.997852: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.004715: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.018397: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.018458: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.030754: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.033314: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.033377: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.033468: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.038151: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.049003: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.054276: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.054342: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.059307: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.059388: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.067112: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.072223: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.124739: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.153785: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.153857: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.171119: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.205890: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.221630: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.226854: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.226919: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.239290: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.242686: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.242750: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.250254: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.250419: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.255248: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.280402: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.280468: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.281694: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.281765: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.285063: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.297818: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.299545: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.306045: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.306111: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.315689: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.318697: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.319311: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.337217: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.337302: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.340360: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.340426: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.350026: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.352844: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.585254: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.615295: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.615377: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.632872: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.730567: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.757226: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.757291: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.774042: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:31.783947: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:31.807469: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:31.814487: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:31.821589: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:31.851124: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:31.851212: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:31.868553: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:32.011941: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.030847: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.056133: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-08-11 14:49:32.077562: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-08-11 14:49:32.077620: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-08-11 14:49:32.090160: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-11 14:49:32.100052: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.143630: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.217138: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.229522: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.259909: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.376527: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.435499: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.948089: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.958730: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:32.994412: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-08-11 14:49:33.299283: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[33;1m2024-08-11 14:49:37,123 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,313 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,526 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,719 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,831 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,874 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,930 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:37,979 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,002 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,170 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,176 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,232 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,258 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,286 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,329 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:38,492 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2024-08-11 14:49:47,282 - mani_skill  - WARNING - panda_wristactivecam is not in the task's list of supported robots. Code may not run as intended[0m
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_init_raw_obs to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_init_raw_obs` for environment variables or `env.get_wrapper_attr('get_init_raw_obs')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.update_obs_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.update_obs_space` for environment variables or `env.get_wrapper_attr('update_obs_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.max_episode_steps to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.max_episode_steps` for environment variables or `env.get_wrapper_attr('max_episode_steps')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.device to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.device` for environment variables or `env.get_wrapper_attr('device')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_observation_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_observation_space` for environment variables or `env.get_wrapper_attr('single_observation_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.single_action_space to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.single_action_space` for environment variables or `env.get_wrapper_attr('single_action_space')` that will search the reminding wrappers.[0m
+  logger.warn(
+Process Worker<ManiSkillAsyncEnv>-9:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-14:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process Worker<ManiSkillAsyncEnv>-12:
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-4:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-0:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-11:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-15:
+Process Worker<ManiSkillAsyncEnv>-13:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+
+During handling of the above exception, another exception occurred:
+
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-5:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-1:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-8:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-3:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-6:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-10:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-2:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+Process Worker<ManiSkillAsyncEnv>-7:
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 651, in _worker_shared_memory
+    pipe.send(((None, reward, terminated, truncated, info), True))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/site-packages/gymnasium/vector/async_vector_env.py", line 686, in _worker_shared_memory
+    pipe.send((None, False))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+{'obs_mode': 'rgbd', 'control_mode': 'pd_joint_delta_pos', 'render_mode': 'sensors', 'sim_backend': 'cpu'}
+False cpu 1
+============== PandaWristActiveCam
+==============self.agent  <class 'mani_skill.sensors.textured_light_camera.TexturedLightCameraConfig'>
+================= TexturedLightCamera
+1
+/home/jianyu/anaconda3/envs/maniskill3/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 3 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
