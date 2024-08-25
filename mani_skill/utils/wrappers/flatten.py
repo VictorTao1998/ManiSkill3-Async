@@ -12,23 +12,38 @@ from mani_skill.utils import common, gym_utils
 from mani_skill.envs.utils.async_utils import *
 from mani_skill.envs.maniskill_async_env import ManiSkillAsyncEnv
 
+from mani_skill import global_params
+
 
 class FlattenRGBDObservationWrapper(gym.ObservationWrapper):
     """
     Flattens the rgbd mode observations into a dictionary with two keys, "rgbd" and "state"
     """
 
-    def __init__(self, env, rgb_only=False) -> None:
+    def __init__(self, env, rgb_only=False, use_trt_engine=False) -> None:
         self.base_env: BaseEnv = env.unwrapped
         super().__init__(env)
         self.rgb_only = rgb_only
-
+        self.use_trt_engine = use_trt_engine
         new_obs = self.observation(self.base_env._init_raw_obs)
         self.base_env.update_obs_space(new_obs)
 
     def observation(self, observation: Dict):
         sensor_data = observation.pop("sensor_data")
         del observation["sensor_param"]
+
+        if self.use_trt_engine:
+            rgb_data_left = sensor_data['hand_camera']['rgb']
+            rgb_data_right = sensor_data['hand_camera_right']['rgb']
+            output = global_params.TRT_ENGINE.process(rgb_data_left, rgb_data_right)
+            output = output[:1, ...]
+            stereo_disparity = torch.Tensor(output).to(rgb_data_left.device)[..., None]
+
+            stereo_depth_raw = (0.03 * 357.60738000000003) / stereo_disparity
+            stereo_depth = (stereo_depth_raw * 1000).type(torch.int16)
+            sensor_data['hand_camera']['depth'] = stereo_depth
+
+
         images = []
         for cam_data in sensor_data.values():
             images.append(cam_data["rgb"])
@@ -51,11 +66,11 @@ class FlattenRGBDObservationAsync2Wrapper(gym.ObservationWrapper):
     Flattens the rgbd mode observations into a dictionary with two keys, "rgbd" and "state"
     """
 
-    def __init__(self, env, rgb_only=False) -> None:
+    def __init__(self, env, rgb_only=False, use_trt_engine=False) -> None:
         self.base_env: ManiSkillAsyncEnv = env.unwrapped
         super().__init__(env)
         self.rgb_only = rgb_only
-
+        self.use_trt_engine = use_trt_engine
         _init_raw_obs = self.base_env.call("get_init_raw_obs")
         _init_raw_obs = concat_dict(list(_init_raw_obs))
         new_obs = self.observation(_init_raw_obs)
@@ -67,6 +82,17 @@ class FlattenRGBDObservationAsync2Wrapper(gym.ObservationWrapper):
     def observation(self, observation: Dict):
         sensor_data = observation.pop("sensor_data")
         del observation["sensor_param"]
+
+        if self.use_trt_engine:
+            rgb_data_left = sensor_data['hand_camera']['rgb']
+            rgb_data_right = sensor_data['hand_camera_right']['rgb']
+            output = global_params.TRT_ENGINE.process(rgb_data_left, rgb_data_right)
+
+            stereo_disparity = torch.Tensor(output).to(rgb_data_left.device)[..., None]
+            stereo_depth_raw = (0.03 * 357.60738000000003) / stereo_disparity
+            stereo_depth = (stereo_depth_raw * 1000).type(torch.int16)
+            sensor_data['hand_camera']['depth'] = stereo_depth
+
         images = []
         for cam_data in sensor_data.values():
             images.append(cam_data["rgb"])
@@ -74,6 +100,8 @@ class FlattenRGBDObservationAsync2Wrapper(gym.ObservationWrapper):
                 images.append(cam_data["depth"])
         # print(images[1].shape)
         # assert 0
+        #output = global_params.TRT_ENGINE.process(rgb_data_left, rgb_data_right)
+
         images = torch.concat(images, axis=-1)
         # flatten the rest of the data which should just be state data
 
@@ -118,6 +146,8 @@ class FlattenRGBDObservationAsyncWrapper(gym.ObservationWrapper):
         # print("==============================================", images[0].shape, images[0].dtype)
         if not isinstance(images[0], torch.Tensor):
             images = [torch.tensor(img) for img in images]
+
+
 
         images = torch.concat(images, axis=-1).squeeze(1)
 

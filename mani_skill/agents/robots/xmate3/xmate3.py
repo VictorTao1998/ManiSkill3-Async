@@ -5,7 +5,7 @@ import sapien
 import sapien.physx as physx
 import torch
 
-from mani_skill import ASSET_DIR
+from mani_skill import ASSET_DIR, PACKAGE_ASSET_DIR
 from mani_skill.agents.base_agent import BaseAgent
 from mani_skill.agents.controllers import *
 from mani_skill.agents.registration import register_agent
@@ -18,7 +18,8 @@ from mani_skill.utils.structs.actor import Actor
 @register_agent()
 class Xmate3Robotiq(BaseAgent):
     uid = "xmate3_robotiq"
-    urdf_path = f"{ASSET_DIR}/robots/xmate3_robotiq/xmate3_robotiq.urdf"
+    # urdf_path = f"{PACKAGE_ASSET_DIR}/robots/xmate3_robotiq/xmate3_robotiq.urdf"
+    urdf_path = f"/home/jianyu/jianyu/pythonproject/ManiSkill3_Mac/mani_skill/assets/robots/xmate3_description/urdf/xmate3.urdf"
     urdf_config = dict(
         _materials=dict(
             gripper=dict(static_friction=2.0, dynamic_friction=2.0, restitution=0.0)

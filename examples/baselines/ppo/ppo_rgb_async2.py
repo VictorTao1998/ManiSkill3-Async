@@ -34,6 +34,10 @@ class Args:
     """if toggled, `torch.backends.cudnn.deterministic=False`"""
     cuda: bool = False
     """if toggled, cuda will be enabled by default"""
+    use_trt: bool = False
+    depth_only: bool = True
+    left_only: bool = True
+
     track: bool = False
     """if toggled, this experiment will be tracked with Weights and Biases"""
     wandb_project_name: str = "cleanRL"
@@ -54,7 +58,7 @@ class Args:
     """path to a pretrained checkpoint file to start evaluation/training from"""
 
     # Algorithm specific arguments
-    env_id: str = "PushCube-v4"
+    env_id: str = "TouchCube-v1"
     """the id of the environment"""
     total_timesteps: int = 10000000
     """total timesteps of the experiments"""
@@ -157,13 +161,17 @@ class DictArray(object):
         return DictArray(new_buffer_shape, None, data_dict=new_dict)
 
 class NatureCNN(nn.Module):
-    def __init__(self, sample_obs):
+    def __init__(self, sample_obs, depth_only=False, left_only=True):
         super().__init__()
 
         extractors = {}
 
         self.out_features = 0
         feature_size = 256
+        self.depth_only = depth_only
+        self.left_only = left_only
+
+        sample_obs = self.preprocess(sample_obs)
         #print(sample_obs['rgbd'].shape)
         in_channels = sample_obs["rgbd"].shape[-1]
         image_size = (sample_obs["rgbd"].shape[1], sample_obs["rgbd"].shape[2])
@@ -203,7 +211,19 @@ class NatureCNN(nn.Module):
 
         self.extractors = nn.ModuleDict(extractors)
 
+    def preprocess(self, x):
+        x = x.copy()
+        if self.depth_only:
+            x["rgbd"] = x["rgbd"][..., 3::4]
+        if self.left_only:
+            shape = x["rgbd"].shape[-1]
+            assert shape % 2 == 0
+            hs = shape//2
+            x["rgbd"] = x["rgbd"][..., :hs]
+        return x
+
     def forward(self, observations) -> torch.Tensor:
+        observations = self.preprocess(observations)
         encoded_tensor_list = []
         # self.extractors contain nn.Modules that do all the processing.
         for key, extractor in self.extractors.items():
@@ -217,9 +237,9 @@ class NatureCNN(nn.Module):
         return torch.cat(encoded_tensor_list, dim=1)
 
 class Agent(nn.Module):
-    def __init__(self, envs, sample_obs):
+    def __init__(self, envs, sample_obs, depth_only=False, left_only=True):
         super().__init__()
-        self.feature_net = NatureCNN(sample_obs=sample_obs)
+        self.feature_net = NatureCNN(sample_obs=sample_obs, depth_only=depth_only, left_only=left_only)
         # latent_size = np.array(envs.unwrapped.single_observation_space.shape).prod()
         latent_size = self.feature_net.out_features
         self.critic = nn.Sequential(
@@ -270,11 +290,19 @@ if __name__ == "__main__":
     args.batch_size = int(args.num_envs * args.num_steps)
     args.minibatch_size = int(args.batch_size // args.num_minibatches)
     args.num_iterations = args.total_timesteps // args.batch_size
-    # trt_engine = TensorRTInfer(
-    #     engine_path="/home/jianyu/jianyu/pythonproject/fadnet_jetson/test_ir.trt",
-    #     batch_size=args.num_envs
-    # )
-    global_params.TRT_ENGINE = None
+
+    if args.use_trt:
+        trt_engine = TensorRTInfer(
+            engine_path="/home/jianyu/jianyu/pythonproject/fadnet_jetson/test_ir.trt",
+            batch_size=args.num_envs
+        )
+        # eval_trt_engine = TensorRTInfer(
+        #     engine_path="/home/jianyu/jianyu/pythonproject/fadnet_jetson/test_ir.trt",
+        #     batch_size=args.num_eval_envs
+        # )
+
+        global_params.TRT_ENGINE = trt_engine
+        #global_params.EVAL_TRT_ENGINE = eval_trt_engine
 
     if args.exp_name is None:
         args.exp_name = os.path.basename(__file__)[: -len(".py")]
@@ -314,7 +342,8 @@ if __name__ == "__main__":
 
     # env setup
     env_kwargs = dict(obs_mode="rgbd", control_mode="pd_joint_delta_pos", render_mode="sensors", sim_backend="cpu")
-
+    #env_kwargs = dict(obs_mode="rgbd", control_mode="pd_joint_pos", render_mode="sensors", sim_backend="cpu")
+    # ['pd_joint_pos', 'arm_pd_joint_delta_pos', 'pd_ee_delta_pos', 'pd_ee_delta_pose']
     # envs = gym.make(args.env_id, num_envs=args.num_envs if not args.evaluate else 1, **env_kwargs)
     # async_env_list = [lambda: gym.make(args.env_id, **env_kwargs)] * (args.num_envs if not args.evaluate else 1)
 
@@ -324,8 +353,8 @@ if __name__ == "__main__":
     eval_envs = gym.make(args.env_id, num_envs=args.num_eval_envs, **env_kwargs)
 
     # rgbd obs mode returns a dict of data, we flatten it so there is just a rgbd key and state key
-    envs = FlattenRGBDObservationAsync2Wrapper(envs, rgb_only=False)
-    eval_envs = FlattenRGBDObservationWrapper(eval_envs, rgb_only=False)
+    envs = FlattenRGBDObservationAsync2Wrapper(envs, rgb_only=False, use_trt_engine=args.use_trt)
+    eval_envs = FlattenRGBDObservationWrapper(eval_envs, rgb_only=False, use_trt_engine=args.use_trt)
 
 
     if isinstance(envs.action_space, gym.spaces.Dict):
@@ -366,7 +395,7 @@ if __name__ == "__main__":
     print(f"args.num_iterations={args.num_iterations} args.num_envs={args.num_envs} args.num_eval_envs={args.num_eval_envs}")
     print(f"args.minibatch_size={args.minibatch_size} args.batch_size={args.batch_size} args.update_epochs={args.update_epochs}")
     print(f"####")
-    agent = Agent(envs, sample_obs=next_obs).to(device)
+    agent = Agent(envs, sample_obs=next_obs, depth_only=args.depth_only, left_only=args.left_only).to(device)
     optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
 
 
